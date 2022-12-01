@@ -27,7 +27,7 @@ public class StringListImpl implements StringList {
     @Override
     public String add(String item) {
         checkItem(item);
-        if (size == items.length) {
+        if (size == capacity) {
             grow();
         }
         items[size] = item;
