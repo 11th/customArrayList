@@ -1,14 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="724e9ede-029f-4279-99da-54fae2ea4b7b" name="Changes" comment="" />
+    <list default="true" id="724e9ede-029f-4279-99da-54fae2ea4b7b" name="Changes" comment="homework is done">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eleventh/list/StringListImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eleventh/list/StringListImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2IHACxaAwvdsP6fWsDBcn3XWt9I" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -20,9 +43,107 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": ""
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.eleventh.list" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.StringListImplTest">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.eleventh.Main" />
+      <module name="customArrayList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.eleventh.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringListImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="customArrayList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.eleventh.list.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.eleventh.list" />
+      <option name="MAIN_CLASS_NAME" value="com.eleventh.list.StringListImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringListImplTest.addToEndOfListWithIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="customArrayList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.eleventh.list.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.eleventh.list" />
+      <option name="MAIN_CLASS_NAME" value="com.eleventh.list.StringListImplTest" />
+      <option name="METHOD_NAME" value="addToEndOfListWithIndex" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringListImplTest.addToMiddleOfList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="customArrayList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.eleventh.list.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.eleventh.list" />
+      <option name="MAIN_CLASS_NAME" value="com.eleventh.list.StringListImplTest" />
+      <option name="METHOD_NAME" value="addToMiddleOfList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringListImplTest.addWithGrow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="customArrayList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.eleventh.list.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.eleventh.list" />
+      <option name="MAIN_CLASS_NAME" value="com.eleventh.list.StringListImplTest" />
+      <option name="METHOD_NAME" value="addWithGrow" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.StringListImplTest" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.StringListImplTest.addToMiddleOfList" />
+        <item itemvalue="JUnit.StringListImplTest.addWithGrow" />
+        <item itemvalue="JUnit.StringListImplTest.addToEndOfListWithIndex" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -31,7 +152,48 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669828013008</updated>
+      <workItem from="1669828015111" duration="11088000" />
+      <workItem from="1669877266689" duration="22431000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1669828172538</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669828172538</updated>
+    </task>
+    <task id="LOCAL-00002" summary="homework is done">
+      <created>1669905744783</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669905744783</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="homework is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework is done" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/customArrayList$StringListImplTest.ic" NAME="StringListImplTest Coverage Results" MODIFIED="1669905462461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.eleventh.list.*</FILTER>
+    </SUITE>
   </component>
 </project>
