@@ -1,4 +1,4 @@
-package com.eleventh.list;
+package com.eleventh.list.string;
 
 public interface StringList {
     // Добавление элемента.

@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="724e9ede-029f-4279-99da-54fae2ea4b7b" name="Changes" comment="homework is done">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eleventh/list/StringListImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eleventh/list/StringListImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eleventh/list/integer/IntegerListImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eleventh/list/integer/IntegerListImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,25 +38,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": ""
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.eleventh.list" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.eleventh.list.integer" />
       <recent name="com.eleventh.list" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StringListImplTest">
+  <component name="RunManager" selected="JUnit.IntegerListImplTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.eleventh.Main" />
       <module name="customArrayList" />
@@ -71,7 +74,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringListImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IntegerListImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="customArrayList" />
       <extension name="coverage">
         <pattern>
@@ -80,54 +83,53 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.eleventh.list" />
-      <option name="MAIN_CLASS_NAME" value="com.eleventh.list.StringListImplTest" />
+      <option name="MAIN_CLASS_NAME" value="com.eleventh.list.IntegerListImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringListImplTest.addToEndOfListWithIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StringListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="customArrayList" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.eleventh.list.*" />
+          <option name="PATTERN" value="com.eleventh.list.string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.eleventh.list" />
-      <option name="MAIN_CLASS_NAME" value="com.eleventh.list.StringListImplTest" />
-      <option name="METHOD_NAME" value="addToEndOfListWithIndex" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.eleventh.list.StringListTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringListImplTest.addToMiddleOfList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StringListTest.addToMiddleOfList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="customArrayList" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.eleventh.list.*" />
+          <option name="PATTERN" value="com.eleventh.list.string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.eleventh.list" />
-      <option name="MAIN_CLASS_NAME" value="com.eleventh.list.StringListImplTest" />
+      <option name="MAIN_CLASS_NAME" value="com.eleventh.list.StringListTest" />
       <option name="METHOD_NAME" value="addToMiddleOfList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringListImplTest.addWithGrow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StringListTest.addWithGrow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="customArrayList" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.eleventh.list.*" />
+          <option name="PATTERN" value="com.eleventh.list.string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.eleventh.list" />
-      <option name="MAIN_CLASS_NAME" value="com.eleventh.list.StringListImplTest" />
+      <option name="MAIN_CLASS_NAME" value="com.eleventh.list.StringListTest" />
       <option name="METHOD_NAME" value="addWithGrow" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -136,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StringListImplTest" />
+        <item itemvalue="JUnit.IntegerListImplTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.StringListImplTest.addToMiddleOfList" />
-        <item itemvalue="JUnit.StringListImplTest.addWithGrow" />
-        <item itemvalue="JUnit.StringListImplTest.addToEndOfListWithIndex" />
+        <item itemvalue="JUnit.StringListTest" />
+        <item itemvalue="JUnit.StringListTest.addToMiddleOfList" />
+        <item itemvalue="JUnit.StringListTest.addWithGrow" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +155,10 @@
       <option name="presentableId" value="Default" />
       <updated>1669828013008</updated>
       <workItem from="1669828015111" duration="11088000" />
-      <workItem from="1669877266689" duration="22431000" />
+      <workItem from="1669877266689" duration="22589000" />
+      <workItem from="1670241805619" duration="1022000" />
+      <workItem from="1670245798002" duration="2641000" />
+      <workItem from="1670311865084" duration="4179000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1669828172538</created>
@@ -169,7 +174,28 @@
       <option name="project" value="LOCAL" />
       <updated>1669905744783</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="homework is done">
+      <created>1669907438236</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669907438236</updated>
+    </task>
+    <task id="LOCAL-00004" summary="homework is done">
+      <created>1670315848515</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670315848515</updated>
+    </task>
+    <task id="LOCAL-00005" summary="homework is done">
+      <created>1670316089018</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670316089018</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,4 +1,4 @@
-package com.eleventh.list;
+package com.eleventh.list.string;
 
 import com.eleventh.list.exceptions.IllegalArgumentException;
 import com.eleventh.list.exceptions.IllegalListItemException;

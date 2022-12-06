@@ -4,6 +4,8 @@ import com.eleventh.list.exceptions.IllegalArgumentException;
 import com.eleventh.list.exceptions.IllegalListItemException;
 import com.eleventh.list.exceptions.IndexOutOfListException;
 import com.eleventh.list.exceptions.ItemNotFoundException;
+import com.eleventh.list.string.StringList;
+import com.eleventh.list.string.StringListImpl;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -11,7 +13,7 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-class StringListImplTest {
+class StringListTest {
     private static final int INITIAL_CAPACITY = 4;
     private static final int ZERO_CAPACITY = 0;
     private static final String ITEM_0 = "0";
