@@ -1,23 +1,36 @@
 package com.eleventh;
 
-import com.eleventh.list.StringList;
-import com.eleventh.list.StringListImpl;
+import com.eleventh.list.integer.Sorter;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        try {
-            StringList list = new StringListImpl(4);
-            list.add("00");
-            list.add("11");
-            list.add("22");
-            list.add("33");
+        var arr1 = generateIntArray(100_000);
+        var arr2 = Arrays.copyOf(arr1, arr1.length);
+        var arr3 = Arrays.copyOf(arr1, arr1.length);
 
-            list.add(1, "77");
-            list.add(1, "88");
+        System.out.println("Сортировка методом пузырька");
+        long start = System.currentTimeMillis();
+        Sorter.sortBubble(arr1);
+        System.out.println(System.currentTimeMillis() - start);
 
-            System.out.println(list.size() + " -> " + list);
-        } catch (RuntimeException e) {
-            System.out.println(e.getMessage());
+        System.out.println("Сортировка выбором");
+        start = System.currentTimeMillis();
+        Sorter.sortSelection(arr2);
+        System.out.println(System.currentTimeMillis() - start);
+
+        System.out.println("Сортировка вставками");
+        start = System.currentTimeMillis();
+        Sorter.sortInsertion(arr3);
+        System.out.println(System.currentTimeMillis() - start);
+    }
+
+    private static Integer[] generateIntArray(int size) {
+        Integer[] result = new Integer[size];
+        for (int i = 0; i < result.length; i++) {
+            result[i] = (int) ((Math.random() * (1000 - 0)) + 0);
         }
+        return result;
     }
 }

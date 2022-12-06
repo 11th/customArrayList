@@ -1,4 +1,4 @@
-package com.eleventh.list;
+package com.eleventh.list.integer;
 
 import com.eleventh.list.exceptions.IllegalArgumentException;
 import com.eleventh.list.exceptions.IllegalListItemException;
@@ -8,24 +8,24 @@ import com.eleventh.list.exceptions.ItemNotFoundException;
 import java.util.Arrays;
 import java.util.Objects;
 
-public class StringListImpl implements StringList {
+public class IntegerListImpl implements IntegerList {
     public static final int NOT_EXIST_INDEX = -1;
     private static final int GROW_CAPACITY = 5;
 
     private int size;
     private int capacity;
-    private String[] items;
+    private Integer[] items;
 
-    public StringListImpl(int initialCapacity) {
+    public IntegerListImpl(int initialCapacity) {
         if (initialCapacity <= 0) {
             throw new IllegalArgumentException("Illegal capacity");
         }
         this.capacity = initialCapacity;
-        items = new String[initialCapacity];
+        items = new Integer[initialCapacity];
     }
 
     @Override
-    public String add(String item) {
+    public Integer add(Integer item) {
         checkItem(item);
         if (size == capacity) {
             grow();
@@ -36,7 +36,7 @@ public class StringListImpl implements StringList {
     }
 
     @Override
-    public String add(int index, String item) {
+    public Integer add(int index, Integer item) {
         if (index < 0 || index > size) {
             throw new IndexOutOfListException("Index out of elements");
         } else if (index < size) {
@@ -50,7 +50,7 @@ public class StringListImpl implements StringList {
     }
 
     @Override
-    public String set(int index, String item) {
+    public Integer set(int index, Integer item) {
         checkIndex(index);
         checkItem(item);
         items[index] = item;
@@ -58,7 +58,7 @@ public class StringListImpl implements StringList {
     }
 
     @Override
-    public String remove(String item) {
+    public Integer remove(Integer item) {
         var index = indexOf(item);
         if (index == NOT_EXIST_INDEX) {
             throw new ItemNotFoundException("Not found");
@@ -67,7 +67,7 @@ public class StringListImpl implements StringList {
     }
 
     @Override
-    public String remove(int index) {
+    public Integer remove(int index) {
         checkIndex(index);
         var item = items[index];
         shiftLeft(index);
@@ -76,12 +76,17 @@ public class StringListImpl implements StringList {
     }
 
     @Override
-    public boolean contains(String item) {
-        return indexOf(item) != NOT_EXIST_INDEX;
+    public boolean contains(Integer item) {
+        if (item == null){
+            return false;
+        }
+        var copy = Arrays.copyOf(items, size);
+        Sorter.sortInsertion(copy);
+        return Searcher.binarySearch(copy, item);
     }
 
     @Override
-    public int indexOf(String item) {
+    public int indexOf(Integer item) {
         for (int i = 0; i < size; i++) {
             if (items[i].equals(item)) {
                 return i;
@@ -91,7 +96,7 @@ public class StringListImpl implements StringList {
     }
 
     @Override
-    public int lastIndexOf(String item) {
+    public int lastIndexOf(Integer item) {
         for (int i = size - 1; i >= 0; i--) {
             if (items[i].equals(item)) {
                 return i;
@@ -101,16 +106,16 @@ public class StringListImpl implements StringList {
     }
 
     @Override
-    public String get(int index) {
+    public Integer get(int index) {
         checkIndex(index);
         return items[index];
     }
 
     @Override
-    public boolean equals(StringList otherList) {
+    public boolean equals(IntegerList otherList) {
         if (this == otherList) return true;
         if (otherList == null || getClass() != otherList.getClass()) return false;
-        StringListImpl that = (StringListImpl) otherList;
+        IntegerListImpl that = (IntegerListImpl) otherList;
         return size == that.size && Arrays.equals(items, that.items);
     }
 
@@ -127,12 +132,12 @@ public class StringListImpl implements StringList {
     @Override
     public void clear() {
         size = 0;
-        items = new String[capacity];
+        items = new Integer[capacity];
     }
 
     @Override
-    public String[] toArray() {
-        String[] result = new String[size];
+    public Integer[] toArray() {
+        Integer[] result = new Integer[size];
         System.arraycopy(items, 0, result, 0, size);
         return result;
     }
@@ -156,7 +161,7 @@ public class StringListImpl implements StringList {
 
     @Override
     public int hashCode() {
-        int result = Objects.hash(size);
+        int result = Objects.hash(size, capacity);
         result = 31 * result + Arrays.hashCode(items);
         return result;
     }
@@ -167,17 +172,18 @@ public class StringListImpl implements StringList {
         }
     }
 
-    private void checkItem(String item) {
+    private void checkItem(Integer item) {
         if (item == null) {
             throw new IllegalListItemException("List can't contain null");
         }
     }
 
     private void shiftLeft(int index) {
-        if (index == size - 1) {
-            items[index] = null;
-        }
-        for (int i = index; i < size - 1; i++) {
+        for (int i = index; i <= size - 1; i++) {
+            if (i == size - 1) {
+                items[i] = null;
+                break;
+            }
             var item = items[i + 1];
             items[i] = item;
             items[i + 1] = null;
@@ -197,7 +203,7 @@ public class StringListImpl implements StringList {
     private void grow() {
         capacity = capacity + GROW_CAPACITY;
         var copy = toArray();
-        items = new String[capacity];
+        items = new Integer[capacity];
         System.arraycopy(copy, 0, items, 0, copy.length);
     }
 }
