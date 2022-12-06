@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="724e9ede-029f-4279-99da-54fae2ea4b7b" name="Changes" comment="homework is done">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eleventh/list/integer/IntegerList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eleventh/list/integer/IntegerListImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eleventh/list/integer/Searcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eleventh/list/integer/Sorter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/eleventh/list/IntegerListImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eleventh/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eleventh/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eleventh/list/StringList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eleventh/list/string/StringList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eleventh/list/StringListImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eleventh/list/string/StringListImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/eleventh/list/StringListImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/eleventh/list/StringListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eleventh/list/integer/IntegerListImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eleventh/list/integer/IntegerListImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +158,7 @@
       <workItem from="1669877266689" duration="22589000" />
       <workItem from="1670241805619" duration="1022000" />
       <workItem from="1670245798002" duration="2641000" />
-      <workItem from="1670311865084" duration="3767000" />
+      <workItem from="1670311865084" duration="4179000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1669828172538</created>
@@ -190,7 +181,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669907438236</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="homework is done">
+      <created>1670315848515</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670315848515</updated>
+    </task>
+    <task id="LOCAL-00005" summary="homework is done">
+      <created>1670316089018</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670316089018</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

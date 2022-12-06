@@ -82,7 +82,7 @@ public class IntegerListImpl implements IntegerList {
         }
         var copy = Arrays.copyOf(items, size);
         sort(copy);
-        return Searcher.binarySearch(copy, item);
+        return binarySearch(copy, item);
     }
 
     @Override
@@ -207,7 +207,7 @@ public class IntegerListImpl implements IntegerList {
         System.arraycopy(copy, 0, items, 0, copy.length);
     }
 
-    public static void sort(Integer[] arr) {
+    private void sort(Integer[] arr) {
         for (int i = 1; i < arr.length; i++) {
             int temp = arr[i];
             int j = i;
@@ -217,5 +217,25 @@ public class IntegerListImpl implements IntegerList {
             }
             arr[j] = temp;
         }
+    }
+
+    private boolean binarySearch(Integer[] arr, Integer element) {
+        int min = 0;
+        int max = arr.length - 1;
+
+        while (min <= max) {
+            int mid = (min + max) / 2;
+
+            if (element == arr[mid]) {
+                return true;
+            }
+
+            if (element < arr[mid]) {
+                max = mid - 1;
+            } else {
+                min = mid + 1;
+            }
+        }
+        return false;
     }
 }
