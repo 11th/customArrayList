@@ -9,6 +9,7 @@ public class Main {
         var arr1 = generateIntArray(100_000);
         var arr2 = Arrays.copyOf(arr1, arr1.length);
         var arr3 = Arrays.copyOf(arr1, arr1.length);
+        var arr4 = Arrays.copyOf(arr1, arr1.length);
 
         System.out.println("Сортировка методом пузырька");
         long start = System.currentTimeMillis();
@@ -23,6 +24,11 @@ public class Main {
         System.out.println("Сортировка вставками");
         start = System.currentTimeMillis();
         Sorter.sortInsertion(arr3);
+        System.out.println(System.currentTimeMillis() - start);
+
+        System.out.println("Быстрая сортировка");
+        start = System.currentTimeMillis();
+        Sorter.quickSort(arr4, 0, arr4.length - 1);
         System.out.println(System.currentTimeMillis() - start);
     }
 

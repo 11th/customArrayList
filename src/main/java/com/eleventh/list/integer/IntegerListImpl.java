@@ -10,7 +10,7 @@ import java.util.Objects;
 
 public class IntegerListImpl implements IntegerList {
     public static final int NOT_EXIST_INDEX = -1;
-    private static final int GROW_CAPACITY = 5;
+    private static final float GROW_CAPACITY_INDEX = 1.5f;
 
     private int size;
     private int capacity;
@@ -81,7 +81,7 @@ public class IntegerListImpl implements IntegerList {
             return false;
         }
         var copy = Arrays.copyOf(items, size);
-        sort(copy);
+        sort(copy, 0, copy.length - 1);
         return binarySearch(copy, item);
     }
 
@@ -201,22 +201,41 @@ public class IntegerListImpl implements IntegerList {
     }
 
     private void grow() {
-        capacity = capacity + GROW_CAPACITY;
+        capacity = (int) (capacity * GROW_CAPACITY_INDEX);
         var copy = toArray();
         items = new Integer[capacity];
         System.arraycopy(copy, 0, items, 0, copy.length);
     }
 
-    private void sort(Integer[] arr) {
-        for (int i = 1; i < arr.length; i++) {
-            int temp = arr[i];
-            int j = i;
-            while (j > 0 && arr[j - 1] >= temp) {
-                arr[j] = arr[j - 1];
-                j--;
-            }
-            arr[j] = temp;
+    private void sort(Integer[] arr, int begin, int end) {
+        if (begin < end) {
+            int partitionIndex = partition(arr, begin, end);
+
+            sort(arr, begin, partitionIndex - 1);
+            sort(arr, partitionIndex + 1, end);
         }
+    }
+
+    private static int partition(Integer[] arr, int begin, int end) {
+        int pivot = arr[end];
+        int i = (begin - 1);
+
+        for (int j = begin; j < end; j++) {
+            if (arr[j] <= pivot) {
+                i++;
+
+                swapElements(arr, i, j);
+            }
+        }
+
+        swapElements(arr, i + 1, end);
+        return i + 1;
+    }
+
+    private static void swapElements(Integer[] arr, int indexA, int indexB) {
+        int tmp = arr[indexA];
+        arr[indexA] = arr[indexB];
+        arr[indexB] = tmp;
     }
 
     private boolean binarySearch(Integer[] arr, Integer element) {
